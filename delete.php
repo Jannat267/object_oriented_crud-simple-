@@ -2,7 +2,7 @@
 		include "action.php";
 		$id= $_GET["delete"];
 		$database->delete($id);
-		header("location:crud.php");
+		header("location:index.php");
 	
 		
 	

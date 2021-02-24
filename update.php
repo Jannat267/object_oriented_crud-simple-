@@ -6,13 +6,13 @@
 		$database->edit($id);
 		$name=$database->name;
 		$location=$database->location;
-		
+
 		if (isset($_POST["update"])) {
 		    $id=$_POST["id"];
 			$name=$_POST['name'];
 	 		$location=$_POST['location'];
 	 		$database->update($id,$name,$location);
-	 		header("location:crud.php");
+	 		header("location:index.php");
 		}
 
 	
